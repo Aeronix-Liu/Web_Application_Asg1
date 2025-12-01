@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- a grading-oriented guideline comment block is attached at the end of this html file -->
+
+    <!-- I declare that the lab work here submitted is original except for source material 
+    explicitly acknowledged, and that the same or closely related material has not been previously 
+    submitted for another course. I also acknowledge that I am aware of University policy and 
+    regulations on honesty in academic work, and of the disciplinary guidelines and procedures
+    applicable to breaches of such policy and regulations, as contained in the website.
+    University Guideline on Academic Honesty: https://www.cuhk.edu.hk/policy/academichonesty/ 
+    Student Name : LIU Xinran 
+    Student ID : 1155233368 
+    Class/Section : ESTR2106
+    Date : 2025/10/21 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Body - Logic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Logic_Script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul>
+                    <li class="nav-icon">
+                    <img src="images/icon.jpg" alt="Site Icon" class="nav-icon-img" width="50px">
+                    </li>
+                    <li><a href="#introduction" class="nav-link">Introduction to Logic</a></li>
+                    <li><a href="#chronology" class="nav-link">Chronology</a></li>
+                    <li><a href="#early-life" class="nav-link">Early Life</a></li>
+                    <li><a href="#wallfacer-life" class="nav-link">Wallfacer Life</a></li>
+                    <li><a href="#deterrence-era" class="nav-link">Deterrence Era</a></li>
+                    <li><a href="#later-years" class="nav-link">Later Years</a></li>
+                    <li><button id="toggleExtraBar" class="nav-link">Show</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <aside>
+        <div id="extraBar" class="hidden">
+            <button class="task-btn task-btn-green">Task 1: Font Size +</button>
+            <button class="task-btn task-btn-red">Task 1: Font Size -</button>
+            <button class="task-btn task-btn-gray">Task 2: Spotlight</button>
+            <button class="task-btn task-btn-blue">Task 3: Bootstrap</button>
+        </div>
+    </aside>
+
+    <main>
+        <section id="introduction">
+            <div class="container"> 
+                <h2>Introduction</h2>  
+                <div class="row mt-4"> 
+                    <div class="col-md-4 col-12">
+                        <div class="bg-light p-3 border rounded shadow-sm">
+                            <img src="images/logic.jpg" alt="Luo Ji Portrait" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-12 mt-3 mt-md-0"> 
+                        <div class="row"> 
+                            
+                            <div class="col-lg-6 col-12 p-3">
+                                <h3>Basic Information</h3>
+                                <p><strong>Name:</strong><br> Logic (LUO Ji)</p>
+                                <p><strong>Role:</strong><br> Astronomer, Wallfacer, Savior of Humanity</p>
+                                <p><strong>First Appearance:</strong> <br>*The Three-Body Problem*</p>
+                            </div>
+                            <div class="col-lg-6 col-12 p-3">
+                                <h3>Key Contributions</h3>
+                                <p>Proposed the Dark Forest Theory, established the deterrence system, and maintained the balance between humanity and the Trisolaran civilization for over 60 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chronology">
+            <h2>Chronology</h2>
+            <table class="chronology-table">
+                <thead>
+                    <tr>
+                        <th>Era</th>
+                        <th>Time Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Crisis Era</td>
+                        <td>201X-2208</td>
+                    </tr>
+                    <tr>
+                        <td>Deterrence Era</td>
+                        <td>2208-2270</td>
+                    </tr>
+                    <tr>
+                        <td>Post-Deterrence</td>
+                        <td>2270-2272</td>
+                    </tr>
+                    <tr>
+                        <td>Broadcast Era</td>
+                        <td>2272-2332</td>
+                    </tr>
+                    <tr>
+                        <td>Bunker Era</td>
+                        <td>2333-2400</td>
+                    </tr>
+                    <tr>
+                        <td>Galactic Era</td>
+                        <td>2273-UNKNOWN</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a href="https://www.bilibili.com/video/BV1H54y1y7Uu/?spm_id_from=333.337.search-card.all.click&vd_source=736f22aedd5e330b0ee909a289a01ef2" target="_blank">
+                <em style="font-size: 20px;">Click ME to watch the video for the chronology in Three-Body</em>
+            </a>
+        </section>
+
+        <section id="early-life">
+            <div class="early-life-container">
+                <h2>Early Life</h2>
+                <div class="early-life-content">
+                    <div class="early-life-text">
+                        <p>Logic's early life began as a laid-back astrophysics professor, focused on trivial joys rather than academia.</p>
+                        <p>His romance with classmate Bai Rong introduced him to creating fictional characters
+                            —a later key to understanding cosmic logic.</p>
+                        <p>His early academic background in astronomy also laid the groundwork for his later understanding 
+                            of the Dark Forest Theory—a concept that would ultimately become humanity’s last line of defense against the Trisolaran invasion.</p>
+                    </div>
+
+                    <div class="early-life-image">
+                        <img src="images/earlylife.jpg" alt="Luo Ji's early life scene" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wallfacer-life">
+            <div class="wallfacer-container">
+                <h2>Wallfacer Life</h2>
+                <div class="wallfacer-content">
+                   
+                    <div class="wallfacer-image">
+                        <img src="images/wallfacer.jpg" alt="Luo Ji as Wallfacer" loading="lazy">
+                    </div>
+
+                    <div class="wallfacer-text">
+                        <p>Forced into duty, Logic used his Wallfacer privilege to live reclusively.</p>
+                        <p>He deduced "Cosmic Sociology" 
+                            from Ye Wenjie's old "cosmic axioms" and dreamed up ideal partner Zhuang Yan. </p>
+                        <p>The PDC found a real Zhuang Yan. 
+                            They had a daughter, but her hibernation (to push him) made him face his mission.</p>
+                        <p>He uncovered the "Dark Forest Law": expose a civilization's location, and it dies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="deterrence-era">
+            <div class="deterrence-container">
+                <h2>Deterrence Era</h2>
+                <div class="deterrence-content">
+                    <div class="deterrence-text">
+                        <p>To test the law, Luo Ji sent a star's coordinates into space, then hibernated.
+                        185 years later, the star's destruction proved him right—he became humanity's savior.</p>
+                        <p>He built the "Dark Forest Deterrence System" (binding Trisolaris/Solar System coordinates) 
+                        and served 62 years as "Swordholder," controlling the "destruction button." 
+                        He turned from hero to a feared, cold "deterrence machine."</p>
+                    </div>
+                    <div class="deterrence-image">
+                        <img src="images/deterrence.jpg" alt="Deterrence Era scene" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="later-years">
+            <div class="later-years-container">
+                <h2>Later Years</h2>
+                <div class="later-years-content">
+                    <div class="later-years-image">
+                        <img src="images/lateryears.jpg" alt="Luo Ji's later years scene" loading="lazy" >
+                    </div>
+                    <div class="later-years-text">
+                        <p>Humanity replaced Luo Ji with Cheng Xin as Swordholder. 
+                            When Trisolaris attacked, Cheng Xin abandoned deterrence, dooming Earth.</p>
+                        <p> Elderly Luo Ji became "Earth's Tomb Guardian": he worked on curvature ships and guarded Pluto's 
+                            Earth Museum. When the Solar System turned 2D, 
+                            he refused escape, staying to die with humanity's relics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comments-section">
+            <div class="container">
+                <h2>User Comments</h2>
+                
+                <form id="commentForm" class="comment-form">
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" required placeholder="your@email.com">
+                        
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Color Preference:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="color" value="Red" required> Red
+                            </label>
+                            <label>
+                                <input type="radio" name="color" value="Green"> Green
+                            </label>
+                            <label>
+                                <input type="radio" name="color" value="Yellow"> Yellow
+                            </label>
+                            <label>
+                                <input type="radio" name="color" value="Blue"> Blue
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" rows="4" required placeholder="Share your thoughts..."></textarea>
+                        
+                        <span class="error-message" id="commentError"></span>
+                    </div>
+                    
+                    <button type="submit" class="add-comment-btn">Add Comment</button>
+                </form>
+                
+                <div id="comments-container" class="comments-list">
+                    <div class="comment-item" style="border-left: 4px solid Red;">
+                        <p><strong>GuessMyEmail@gmail.com</strong> <span class="comment-color">Red</span></p>
+                        <p>Good Story!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <aside>
+    <div id="spotlightArea">
+         <h3>
+            Spotlights
+            <button id="hideSpotlight">Hide</button>
+         </h3>
+         <div id="spotlightContent">
+            <p class="initial-hint">The spotlights you add will be shown below.</p>
+         </div>
+    </div>
+
+    <div class="modal fade" id="timeModal" tabindex="-1" aria-labelledby="timeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            
+            <div class="modal-header">
+                <h5 class="modal-title" id="timeModalLabel">Clock</h5>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <p id="currentTime">Current Time: Loading...</p>
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </aside>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            <!-- Left: Site info -->
+            <div class="footer-info">
+            <h3>Three Body - Logic</h3>
+            <p>A tribute to LIU Cixin's masterpiece</p>
+            </div>
+            
+            <!-- Right: Timer + Copyright + Back to Top -->
+            <div class="footer-timer">
+            <p id="stay-duration" class="duration-display">Duration of Stay: 00:00:00</p>
+            <p class="copyright">© 2025 Three-Body Fan Site. Authored by Aeronix</p>
+            <button id="back-to-top" class="back-to-top-btn">Back to Top</button>
+            </div>
+        </div>
+    </footer>
+    <script src="dist/stayTimer.js"></script>
+</body>
+<!-- Problem 1: heading --Line 53, html file
+           List --Line 29, html file
+           Table --Line 81 html file
+           hyperlink --Line 116, html file
+           image --Line 57, html file
+
+           header --Line 25,39, html file
+           nav --Line 26,38, html file
+           section --Line 51, html file
+           aside --Line 41, html file
+           main --Line 50, html file
+           footer --Line 281,html file
+
+
+Problem 2: grid system --Line 54 in #introduction, html file
+           header background --Line 10, css file
+           section background --Line 63, css file
+           nav bar --Line 41, css file
+           font --Line 46, css file
+
+Problem 2e: Line 53 with css animation, css file
+
+Problem 3: extraBar and buttons --Line 43, html file
+    Task 0: Line 2,18, js file
+    Task 1: Line 29, js file
+    Task 2: Line 63, js file; Line 249, html file
+    Task 3: Line 117, js file; Line 259, html file
+
+Problem 4-6: Line 197, html file
+            Line 141, js file
+
+Problem 7e: see dist folder -->
+
+</html>
